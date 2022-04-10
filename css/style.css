@@ -5,37 +5,48 @@
 header{
     background-color:  #000056;
 }
+ .navResponsive{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000056;
+    display: none;
+}
+header .menuResponsive{
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+}
 .headerSup{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
 }
+input#menu{
+    display: none;
+}
+input#menu:checked ~ .navResponsive {
+    display: block;
+} 
 .header-nav{
+    margin-left: 0px;
+    display: flex;
     list-style-type: none;
 }
 .header-nav li{
-    display: inline;
-    padding: 1rem;
+    
+    /* padding: 1rem; */
     /* border: 1px solid rgb(248, 243, 243); */
-    /* margin: 0.1rem; */
+    margin: 0.3rem;
 }
 .header-nav li a{
     color: #fff;
     text-decoration: none;
-
 }
-/* #navIzquierda{
-    margin-top: 3rem;
-    float: left;
-}  */
-/* #navDerecha{
-} */
-
-/* header div a img{
-    text-align: center;
-} */
 .contentNoticia{
     background-image: url(../imagen/imagenCarrusel.jpg) !important;
     background-repeat: no-repeat;
@@ -64,9 +75,9 @@ article{
     flex-direction: column;
     align-items: center;
     border: 2px solid #000056;
+    width: 50%;
     padding: 1.3rem;
     margin-bottom: 2rem;
-    /* background-color: #000056; */
     color: white;
     background: #0575E6;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
@@ -78,7 +89,6 @@ article{
     display: flex;
     flex-direction: row;
     align-items: center;
-
 }
 
 #parrafoBoton{
@@ -93,23 +103,19 @@ article{
     align-items: center;
     justify-content: center;
     align-content: stretch;
-    height: 5rem;
     border-radius: 1rem;
-    /* margin-top: 3rem; */
 }
 #botonInfo{
     background-color: #000056;
     color: white;
     border-radius: 30px;
     text-align: center;
-    
 }
 
 footer{
     background-color:  #000056 ;
     /* height: 16rem; */
     /* display: flex; */
-
 }
 .contenidoFooter{
     display: flex;
@@ -134,7 +140,6 @@ footer p{
     color: white;
 
 }
-
 /* Institucional */
 
 .nav-disciplinas{
@@ -159,31 +164,49 @@ ul li a{
 /* Galería */
 
 #filtrarPor{
-    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 .todasLasDisciplinas{
-    display: inline;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        margin-bottom: 2rem;
 }
 .disciplina{
-    width: 20%;
     border: 2px solid rgb(15, 15, 15);
     padding: 1.2rem;
     border-radius: 1.5rem;
-    margin-bottom: 2rem;
-    display: inline-block;
-    margin-left: 1.3rem;
-    margin-top: 1.5rem;
-    height: auto;
+    
+    }
+.lineaDisciplina{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
 }
-.disciplina div{
-    display: inline;
+
+.disciplina1 { grid-area: 1 / 1 / 2 / 2; }
+.disciplina2 { grid-area: 1 / 2 / 2 / 3; }
+.disciplina3 { grid-area: 1 / 3 / 2 / 4; }
+.disciplina4 { grid-area: 1 / 4 / 2 / 5; }
+.disciplina5 { grid-area: 2 / 1 / 3 / 2; }
+.disciplina6 { grid-area: 2 / 2 / 3 / 3; }
+.disciplina7 { grid-area: 2 / 3 / 3 / 4; }
+.disciplina8 { grid-area: 2 / 4 / 3 / 5; }
+
+.disciplina #texto{
+    display: flex;
+    flex-direction: column;
 }
 .disciplina a{
     text-decoration: none;
     height: 10rem;
 }
 .disciplina div img{
-    height: 270px;
+    height: 250px;
     width: 360px;
     margin-left: 0.7rem;
     border-radius: 2.5rem;
@@ -204,22 +227,6 @@ ul li a{
 
 /* Disciplinas */
 
-.todasLasDisciplinas{
-    display: inline;
-}
-.disciplina{
-    width: 20%;
-    border: 2px solid rgb(15, 15, 15);
-    padding: 1.2rem;
-    border-radius: 1.5rem;
-    margin-bottom: 2rem;
-    display: inline-block;
-    margin-left: 1.3rem;
-    margin-top: 1.5rem;
-}
-.disciplina div{
-    display: inline;
-}
 .disciplina a{
     text-decoration: none;
     height: 10rem;
@@ -269,4 +276,53 @@ select{
     padding: 1rem;
     margin: 1rem;
 
+}
+@media (max-width: 768px){
+    .header-nav{
+        display: none;
+    }
+    .navResponsive{
+        display: none !important;
+    }
+    header .navResponsive{
+        display: initial;
+        position: inherit;
+    }
+    header .navResponsive  ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    header .navResponsive  {
+        position: relative;
+    }
+
+    header #navResponsive :hover > ul {
+        display: flex;
+    }
+    
+    header .navResponsive  ul {
+        position: absolute;
+        left: 0;
+        padding: 0.5rem;
+        height: 7rem;
+        background-color: rgb(250, 250, 250);
+        border-radius: 5px;
+    }
+    .contenidoFooter {
+        display: flex;
+        width: 100%;
+        /* font-size: 3rem;
+        width: 1rem;
+        height: 4rem; */
+    }
+}
+@media (min-width: 768px){
+    header .menuResponsive{
+        display: none ;
+    }
+    header .navResponsive .header__closeMenu {
+        display: none;
+      }
+    
+    
 }

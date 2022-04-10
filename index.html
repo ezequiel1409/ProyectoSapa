@@ -18,19 +18,36 @@
     <main>
         <header>    
             <div class="headerSup"> 
-                 <ul class=" header-nav" id="navIzquierda">
+                 <ul class="header-nav" id="navIzquierda">
                     <li><a href="institucional.html">Institucional</a></li>
                  </ul>
                  <div id="img-Logo-head">
-                  <img  src="imagen\logo.png" alt="Logo Sapa">
+                    <a href="index.html" ><img src="imagen\logo.png" alt="Logo Sapa"></a>
                  </div>
                 <ul class="header-nav" id="navDerecha" >
                    <li> <a href="disciplinas.html">Disciplinas</a></li>
                     <li><a href="galeria.html">Galería</a></li>
                    <li> <a href="contacto.html">Contacto</a></li>
                 </ul>
-                
+                <input type="checkbox" id="menu">
+                <label for="menu" class="menuResponsive">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <nav class="navResponsive">
+                    
+                    <label for="menu" class="header__closeMenu">
+                      <i class="fa-solid fa-circle-xmark"></i>
+                    </label>
+
+                    <ul>
+                        <li> <a href="disciplinas.html">Disciplinas</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li> <a href="contacto.html">Contacto</a></li>
+                    </ul>
+
+                </nav>
             </div>
+            
         </header>
 
     <section class="contentNoticia" >
@@ -63,8 +80,8 @@
                 Marcos Paz, 1727</p>
             <ul class="navGeneral" >
                 <li><a href="#"><i class="fa-brands fa-2x fa-twitter iconos-footer"  alt="Icon TW"></i>  </a></li>
-                <li><a href="#"> <i class="fa-brands fa-2x fa-facebook  iconos-footer"  alt="Icon FB"></i></a></li>
-                <li><a href="#"> <i class="fa-brands fa-2x fa-instagram  iconos-footer" alt="Icon IG"></i></a></li>
+                <li><a href="https://www.facebook.com/sapa.pabellon.7" target="_blank"> <i class="fa-brands fa-2x fa-facebook  iconos-footer"  alt="Icon FB"></i></a></li>
+                <li><a href="https://www.instagram.com/sapapabellon/" target="_blank"> <i class="fa-brands fa-2x fa-instagram  iconos-footer" alt="Icon IG"></i></a></li>
             </ul>
         </div>
     </footer>
