@@ -83,7 +83,9 @@ article{
     background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 1rem;
-    
+}
+.animate__animated{
+    animation-duration: 5s !important;
 }
 .contentInfo{
     display: flex;
@@ -104,6 +106,7 @@ article{
     justify-content: center;
     align-content: stretch;
     border-radius: 1rem;
+    color: white;
 }
 #botonInfo{
     background-color: #000056;
@@ -170,10 +173,10 @@ ul li a{
 }
 .todasLasDisciplinas{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 15px;
-        grid-row-gap: 15px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        /* grid-column-gap: 15px;
+        grid-row-gap: 15px; */
         margin-bottom: 2rem;
 }
 .disciplina{
