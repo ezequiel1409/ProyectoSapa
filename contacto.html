@@ -15,65 +15,95 @@
 </head>
 
 <body>
-    <main>
-        <header>    
-            <div class="headerSup"> 
-                 <ul class=" header-nav" id="navIzquierda">
-                    <li><a href="institucional.html">Institucional</a></li>
-                 </ul>
-                 <div id="img-Logo-head">
-                    <a href="index.html" ><img src="imagen\logo.png" alt="Logo Sapa"></a>
-                 </div>
-                <ul class="header-nav" id="navDerecha" >
-                   <li> <a href="disciplinas.html">Disciplinas</a></li>
-                    <li><a href="galeria.html">Galería</a></li>
-                   <li> <a href="contacto.html">Contacto</a></li>
-                </ul>
-                
+    <header>    
+        <div class="headerSup d-none d-sm-flex"> 
+            <ul class=" header-nav" id="navIzquierda">
+               <li><a href="institucional.html">Institucional</a></li>
+            </ul>
+            <div id="img-Logo-head">
+               <a href="index.html" ><img src="imagen\logo.png" alt="Logo Sapa"></a>
             </div>
-        </header>
+           <ul class="header-nav" id="navDerecha" >
+              <li> <a href="disciplinas.html">Disciplinas</a></li>
+               <li><a href="galeria.html">Galería</a></li>
+              <li> <a href="contacto.html">Contacto</a></li>
+           </ul>
+           
+       </div>
+       <nav class="navbar navbar-expand-lg navbar-light d-sm-none ">
+        <div class="container-fluid">
+            <a href="index.html" class="text-center" ><img src="imagen\logo.png" alt="Logo Sapa"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars text-white"></i>
+          </button>
+          <div class="collapse navbar-collapse text-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="disciplinas.html">Disciplinas</a></li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <li> <a class="nav-link" href="contacto.html">Contacto</a></li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#" >Institucional</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
         <section>
-            <h1>Dejanos tus datos, asi te contactamos!</h1>
-            <!-- <h6>Y pronto nos estaremos contactando!</h6> -->
-    
-            <form action="" method="post">
-                <div class="form">
-                    <div id="datos">
-                        <div>
-                            <input type="text" placeholder="Nombre" name="nombre">
-                        </div>
-                        <div>
-                        <input type="text" placeholder="Apellido" name="apellido">
-                        </div>
-                        <input type="email" placeholder="Email" name="email">
-                        <!-- <div>
-                            
-                        </div> -->
-                        <div>
-                        <input type="number" name="phone"  placeholder="Teléfono">
-                        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <h1>Dejanos tus datos, asi te contactamos!</h1>
                     </div>
-                    <div>
-                        <select name="Disciplina" >
-                            <option disabled selected>Elija una disciplina</option>
-                            <option value="Handball">Handball</option>
-                            <option value="Futbol" >Fútbol</option>
-                            <option value="Basquet">Básquet</option>
-                            <option value="Atletismo" >Atletismo</option>
-                            <option value="Natacion">Natación</option>
-                            <option value="Voley" >Voley</option>
-                            <option value="Gimnasia">Gimnasia</option>
-                        </select>
+                    <div class="col-8 col-sm-6 col-md-6 col-lg-6 col-xl-6 offset-2 offset-md-3">
+
+                        <form action="" method="post">
+                            <div class="form">
+                                <div id="datos">
+                                    <div>
+                                        <input class="form-control" type="text" placeholder="Nombre" name="nombre">
+                                    </div>
+                                    <div>
+                                    <input class="form-control" type="text" placeholder="Apellido" name="apellido">
+                                    </div>
+                                    <input class="form-control"  type="email" placeholder="Email" name="email">
+                                    <div>
+                                    <input class="form-control" type="number" name="phone"  placeholder="Teléfono">
+                                    </div>
+                                </div>
+                                <div>
+                                    <select class="form-select" name="Disciplina" >
+                                        <option disabled selected>Elija una disciplina</option>
+                                        <option value="Handball">Handball</option>
+                                        <option value="Futbol" >Fútbol</option>
+                                        <option value="Basquet">Básquet</option>
+                                        <option value="Atletismo" >Atletismo</option>
+                                        <option value="Natacion">Natación</option>
+                                        <option value="Voley" >Voley</option>
+                                        <option value="Gimnasia">Gimnasia</option>
+                                    </select>
+                                </div>
+                                <textarea class="form-control" name="message" placeholder="Deja tu mensaje" cols="40" rows="8"></textarea>
+                                <div class="botonera">
+                                    <button class="btn btn-secondary" type="reset">Limpiar formulario</button>
+                                    <button class="btn btn-primary" type="submit">Enviar</button> 
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <textarea name="message" placeholder="Deja tu mensaje" cols="40" rows="8"></textarea>
-                    <div class="botonera">
-                        <button type="reset">Limpiar formulario</button>
-                        <button type="submit">Enviar</button> 
-                    </div>
-                        
                 </div>
-            </form>
+            </div>
+    
         </section>
+    </main>
         
     
         <footer >
@@ -92,7 +122,6 @@
                 </div>
             </div>
         </footer>
-    </main>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>

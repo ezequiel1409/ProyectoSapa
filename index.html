@@ -18,63 +18,116 @@
 </head>
 
 <body>
-    <main>
         <header>    
-            <div class="headerSup"> 
-                 <ul class="header-nav" id="navIzquierda">
+            <div class="headerSup d-none d-sm-flex"> 
+                <ul class=" header-nav" id="navIzquierda">
                     <li><a href="institucional.html">Institucional</a></li>
-                 </ul>
-                 <div id="img-Logo-head">
-                    <a href="index.html" ><img src="imagen\logo.png" alt="Logo Sapa"></a>
-                 </div>
-                <ul class="header-nav" id="navDerecha" >
-                   <li> <a href="disciplinas.html">Disciplinas</a></li>
-                    <li><a href="galeria.html">Galería</a></li>
-                   <li> <a href="contacto.html">Contacto</a></li>
                 </ul>
-                <input type="checkbox" id="menu">
-                <label for="menu" class="menuResponsive">
-                    <i class="fa-solid fa-bars"></i>
-                </label>
-                <nav class="navResponsive">
-                    
-                    <label for="menu" class="header__closeMenu">
-                      <i class="fa-solid fa-circle-xmark"></i>
-                    </label>
-
-                    <ul>
-                        <li> <a href="disciplinas.html">Disciplinas</a></li>
-                        <li><a href="galeria.html">Galería</a></li>
-                        <li> <a href="contacto.html">Contacto</a></li>
-                    </ul>
-
-                </nav>
+                <div id="img-Logo-head">
+                    <a href="index.html" ><img src="imagen\logo.png" alt="Logo Sapa"></a>
+                </div>
+                <ul class="header-nav" id="navDerecha" >
+                    <li> <a href="disciplinas.html">Disciplinas</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li> <a href="contacto.html">Contacto</a></li>
+                </ul>
+                
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light d-sm-none ">
+            <div class="container-fluid">
+                <a href="index.html" class="text-center" ><img src="imagen\logo.png" alt="Logo Sapa"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="disciplinas.html">Disciplinas</a></li>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                    <li> <a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link " href="#" >Institucional</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+        </header>
+    <main>
+        <section class="contentNoticia" >
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imagen/imagenCarrusel.jpg" class="d-block w-100" alt="Handball Sapa">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>¡Gran debut de nuestras inferiores!</h3>
+                        <h5>Deporte: Handball</h5>
+                        <p>El sábado pasado debutaron nuestras inferiores masculinas enfrentando a Sociedad Alemana Los Polvorines.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagen/equipoFutbol.jpg" class="d-block w-100" alt="Rugby">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>El plantel femenino puso primera y se trajo los primeros puntos a casa!</h3>
+                        <h5>Deporte: Rugby</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagen/equipoFutbol.jpg" class="d-block w-100" alt="Futbol">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>El plantel masculino puso primera y se trajo los primeros puntos a casa!</h3>
+                        <h5>Deporte: Fútbol</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+                
+            </div>
+        </section> 
+        
+        <section class="contentInfo">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6  ">
+                        <div id="parrafoBoton">
+                            <p>¿Te interesa hacer alguna
+                                disciplina que tenemos en el
+                                club? Hacé clic en el botón,
+                                llena el formulario y pronto
+                                alguien se contactará con vos</p>
+                            <a href="contacto.html"><button  id="botonInfo">Más información</button></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 ">
+                        <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.835460828136!2d-58.83227618448922!3d-34.7849172804129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcec000cc429e1%3A0xf7b354264cd732e2!2sDardo%20Rocha%201866%2C%20B1727%20Marcos%20Paz%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1647642473561!5m2!1ses-419!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
             </div>
             
-        </header>
-
-    <section class="contentNoticia" >
-    <div class="noticia  animate__rollOut " >
-            <h5 class="">¡Gran debut de nuestras inferiores!</h5>
-            <p>El sábado pasado debutaron nuestras inferiores masculinas enfrentando a Sociedad Alemana Los Polvorines.</p>
-        </div>
-    </section> 
-       
-    <section class="contentInfo">
-        <div id="parrafoBoton">
-            <p>¿Te interesa hacer alguna
-                disciplina que tenemos en el
-                club? Hacé clic en el botón,
-                llena el formulario y pronto
-                alguien se contactará con vos</p>
-            <a href="contacto.html"><button  id="botonInfo">Más información</button></a>
-        </div>
-        <div class="mapUbicacion">
-            <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.835460828136!2d-58.83227618448922!3d-34.7849172804129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcec000cc429e1%3A0xf7b354264cd732e2!2sDardo%20Rocha%201866%2C%20B1727%20Marcos%20Paz%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1647642473561!5m2!1ses-419!2sar"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </section>   
+        </section>   
+    </main>
     
     <footer >
         <div class="container">
@@ -93,7 +146,6 @@
         </div>
     </footer>
 
-    </main>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
