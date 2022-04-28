@@ -12,7 +12,7 @@ header{
 #img-Logo-head{
     margin-left:9rem;
 }
- .navResponsive{
+ /* .navResponsive{
     position: absolute;
     top: 0;
     left: 0;
@@ -26,19 +26,19 @@ header .menuResponsive{
     padding: 0.5rem;
     border-radius: 0.5rem;
     border: 2px solid white;
-}
+} */
 .headerSup{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
-input#menu{
+/* input#menu{
     display: none;
 }
 input#menu:checked ~ .navResponsive {
     display: block;
-} 
+}  */
 .header-nav{
     margin-left: 0px;
     display: flex;
@@ -66,8 +66,12 @@ input#menu:checked ~ .navResponsive {
 } 
 .carousel-caption{
     opacity: 0.6 !important;
-    background-color: #adb5bd;
+    /* background-color: #adb5bd; */
 }
+.carousel-captions h2 h3 p{
+    color: white !important;
+}
+
 article{
     display: inline-block;
 }
@@ -152,10 +156,12 @@ footer p{
     background-color: rgb(21, 21, 124);
 
 }
-.nav-disciplinas ul li{
+.nav-disciplinas ul{
+    display: flex;
+}
+.nav-disciplinas li{
     list-style-type: none;
     border-radius: 1rem;
-    display: inline;
     padding: 0.2rem;
     border: 1px solid white;
     margin-left: 1.5rem;
