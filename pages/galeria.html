@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="..\css\style.css">
     <title>Galería</title>
     <link rel="shorcut icon" href="imagen\logo.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,47 +13,50 @@
     <script src="https://kit.fontawesome.com/7a0cb1ad9e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <main>
         <header>    
-            <div class="headerSup d-none d-sm-flex"> 
-                <ul class=" header-nav" id="navIzquierda">
-                   <li><a href="institucional.html">Institucional</a></li>
-                </ul>
-                <div id="img-Logo-head">
-                   <a href="index.html" ><img src="imagen\logo.png" alt="Logo Sapa"></a>
+            <div class="row">
+                <div class="headerSup d-none d-sm-flex"> 
+                    <ul class=" header-nav" id="navIzquierda">
+                        <li><a href="institucional.html">Institucional</a></li>
+                    </ul>
+                    <div id="img-Logo-head">
+                        <a href="../index.html" ><img src="../imagen/logo.png" alt="Logo Sapa"></a>
+                    </div>
+                    <ul class="header-nav" id="navDerecha" >
+                        <li> <a href="disciplinas.html">Disciplinas</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li> <a href="contacto.html">Contacto</a></li>
+                    </ul>
+                    
                 </div>
-               <ul class="header-nav" id="navDerecha" >
-                  <li> <a href="disciplinas.html">Disciplinas</a></li>
-                   <li><a href="galeria.html">Galería</a></li>
-                  <li> <a href="contacto.html">Contacto</a></li>
-               </ul>
-               
-           </div>
-           <nav class="navbar navbar-expand-lg navbar-light d-sm-none ">
+            </div>
+            
+            <nav class="navbar navbar-expand-lg navbar-light d-sm-none ">
             <div class="container-fluid">
                 <a href="index.html" class="text-center" ><img src="imagen\logo.png" alt="Logo Sapa"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars text-white"></i>
-              </button>
-              <div class="collapse navbar-collapse text-center" id="navbarNav">
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbarNav">
                 <ul class="navbar-nav">
-                  <li class="nav-item">
+                    <li class="nav-item">
                     <a class="nav-link" href="disciplinas.html">Disciplinas</a></li>
-                  </li>
-                  <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                     <a class="nav-link" href="galeria.html">Galería</a>
-                  </li>
-                  <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                     <li> <a class="nav-link" href="contacto.html">Contacto</a></li>
-                  </li>
-                  <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                     <a class="nav-link " href="institucional.html" >Institucional</a>
-                  </li>
+                    </li>
                 </ul>
-              </div>
+                </div>
             </div>
-          </nav>
+            </nav>
         </header>
+    <main>
         <section>
             <div class="container">
                 <div class="row mt-3 mb-3">
@@ -80,7 +83,7 @@
                 <div class="row mt-3 mb-3">
                     <div class="col-12 col-sm-4 col-md-4 col-lg-4 " >
                         <a class="card disciplina" href="#">
-                                <img class="card-img-top" src="imagen/imagenCarrusel.jpg" alt="Handball">
+                                <img class="card-img-top" src="../imagen/imagenCarrusel.jpg" alt="Handball">
                             <div class="card-body" id="texto">
                                 <h2>Perdió Sapa frente a S.A.G Polvorines 25 a 30</h2>
                                 <h3>Deporte: Handball</h3>
@@ -90,7 +93,7 @@
                     </div>
                     <div class="col-12 col-sm-4 col-md-4 col-lg-4" >
                         <a  class="card disciplina" href="#">
-                                <img class="card-img-top" src="imagen/anuncio.jpg" alt="Tenis">
+                                <img class="card-img-top" src="../imagen/anuncio.jpg" alt="Tenis">
                             <div id="texto">
                                 <h2>Nos ampliamos!</h2>
                                 <h3>Deporte: Tenis</h3>
@@ -100,7 +103,7 @@
                     </div>
                     <div class="col-12 col-sm-4 col-md-4 col-lg-4 " >
                         <a class="card disciplina" href="#">
-                                <img class="card-img-top"  src="imagen/sapaRugby.jpg" alt="Rugby">
+                                <img class="card-img-top"  src="../imagen/sapaRugby.jpg" alt="Rugby">
                             <div class="card-body" id="texto">
                                 <h2>El plantel femenino puso primera y se trajo los primeros puntos a casa!</h2>
                                 <h3>Deporte: Rugby</h3>
@@ -110,7 +113,7 @@
                     </div>
                     <div class="col-12 col-sm-4 col-md-4 col-lg-4 " >
                         <a  class="card disciplina" href="#">
-                                <img class="card-img-top" src="imagen/equipoFutbol.jpg" alt="Futbol">
+                                <img class="card-img-top" src="../imagen/equipoFutbol.jpg" alt="Futbol">
                             <div class="card-body" id="texto">
                                 <h2>El plantel masculino puso primera y se trajo los primeros puntos a casa!</h2>
                                 <h3>Deporte: Fútbol</h3>
@@ -124,11 +127,12 @@
             </div>
 
         </section>
+    </main>
         <footer >
             <div class="container">
                 <div class="row ">
                     <div class="contenidoFooter mt-3 mb-3">
-                    <a href="index.html" ><img id="imagenFooter" src="imagen\logo.png" alt="Logo Sapa"></a>
+                    <a href="../index.html" ><img id="imagenFooter" src="../imagen/logo.png" alt="Logo Sapa"></a>
                     <p>Dardo Rocha 1866, 
                         Marcos Paz, 1727</p>
                     <ul class="navGeneral" >

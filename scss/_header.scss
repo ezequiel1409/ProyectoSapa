@@ -1,0 +1,29 @@
+header{
+    background-color: $colorSapa;
+}
+.headerSup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+} 
+.header-nav{
+    margin-left: 0px;
+    display: flex;
+    list-style-type: none;
+
+    li{
+        margin-left: 1.5rem;
+    }
+    a{
+        color: $colorBlanco;
+        text-decoration: none;
+    }
+}
+#img-Logo-head{
+    margin-left:9rem;
+}
+.navbar-nav a{
+    color: $colorBlanco !important;
+    text-decoration: none !important;
+}

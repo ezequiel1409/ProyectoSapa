@@ -1,0 +1,23 @@
+footer{
+    background-color: $colorSapa;
+    p {
+        color: $colorBlanco;
+    }
+}
+.contenidoFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+.iconos-footer{
+    color: $colorBlanco;
+}
+.navGeneral{
+    display: flex;
+    list-style-type: none;
+    li{
+        margin: 0.5rem;
+    }
+}

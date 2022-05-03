@@ -1,0 +1,16 @@
+$colorSapa : #000056;
+$colorBlanco : white;
+
+@import '_header';
+@import '_disciplinas';
+@import '_home';
+@import '_footer';
+
+*{
+    font-size: 1.1rem;
+    font-family: 'Roboto',  Verdana, sans-serif;
+}
+body{
+    width: 100%;
+    height: auto;
+}
