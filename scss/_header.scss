@@ -15,4 +15,15 @@ header{
     li{
         margin-left: 1.5rem;
     }
+    a{
+        color: $colorBlanco;
+        text-decoration: none;
+    }
+}
+#img-Logo-head{
+    margin-left:9rem;
+}
+.navbar-nav a{
+    color: $colorBlanco !important;
+    text-decoration: none !important;
 }

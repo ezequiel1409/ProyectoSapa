@@ -1,0 +1,20 @@
+.form{
+    display: inline;
+    margin: 1rem;
+    align-items: center;
+}
+ .form-select, .form-control, input, select, textarea{
+    border-radius: 0.5rem !important;
+    padding: 0.5rem;
+    margin: 0.3rem;
+    border: 2px solid #000056 !important;
+    text-align: center;
+}
+.botonera{
+    
+    button{
+        border-radius: 0.9rem;
+        padding: 1rem;
+        margin: 1rem;
+    }
+}
