@@ -3,10 +3,9 @@ $colorBlanco : white;
 
 @import '_header';
 @import '_disciplinas';
-@import '_contacto';
+@import 'contacto';
 @import '_home';
 @import '_footer';
-// @import '';
 
 *{
     font-size: 1.1rem;
@@ -17,9 +16,16 @@ body{
     height: auto;
 }
 @media (min-width: 300px) and (max-width:570px){
+    #textDisciplinas{
+        font-size: 20px;
+        font-weight: bolder;
+    }
     @mixin sizes($width) {
         width: $width;
      }
+    #imgCarrusel{
+        height: 310px
+    } 
     #imgLogoMobile{
         @include sizes(70px);
     }

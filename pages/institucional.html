@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="SAPA, SOCIO, CLUB SAPA, CLUB SAPA MARCOS PAZ, MAS INFORMACIÓN DE LAS ACTIVIDADES, Disciplinas, Handball, Basquet, Tenis, Voley, Futbol, Futsal">
+    <meta name="description" content="Pagina web para obtener mas información de las tablas, competiciones en la que compite la disciplina que consulta, colaborar con el club">
     <link rel="stylesheet" href="..\css\style.css">
     <title>Institucional</title>
     <link rel="shorcut icon" href="imagen\logo.png">
@@ -35,7 +37,7 @@
     
     <nav class="navbar navbar-expand-lg navbar-light d-sm-none ">
     <div class="container-fluid">
-        <a href="index.html" class="text-center" ><img id="imgLogoMobile" src="imagen\logo.png" alt="Logo Sapa"></a>
+        <a href="index.html" class="text-center" ><img  id="imgLogoMobile" src="../imagen/logo.png" alt="Logo Sapa"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa-solid fa-bars text-white"></i>
         </button>
@@ -60,7 +62,19 @@
 </header>
     <main>
         <section>
-            <nav class="navbar navbar-expand-lg navbar-light nav-disciplinas">
+            <div class="nav-disciplinas d-none d-sm-flex">
+                <ul>
+                    <li><a href="#">Handball</a></li>
+                    <li><a href="#">Fútbol</a></li>
+                    <li><a href="#">Básquet</a></li>
+                    <li><a href="#">Atletismo</a></li>
+                    <li><a href="#">Natación</a></li>
+                    <li><a href="#">Voley</a></li>
+                    <li><a href="#">Gimnasia en trampolín</a></li>
+                    <li><a href="#">Gimnasio</a></li>
+                </ul>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light nav-disciplinas d-sm-none">
                 <div class="container-fluid">
                   <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars"></i>
@@ -123,7 +137,7 @@
     </main>
         <footer >
             <div class="container">
-                <div class="row mt-3 mb-3 align-items-center">
+                <div class="row contenidoFooter  align-items-center">
                     <div class="col-3 col-sm-4 col-md-4 col-lg-4">
                         <a href="../index.html" ><img id="imagenFooter" src="../imagen/logo.png" alt="Logo Sapa"></a>
                     </div>
@@ -134,15 +148,12 @@
                     </div> 
                     <div class="col-3 col-sm-4 col-md-4 col-lg-4  ">
                         <ul class="navGeneral" >
-                            <li><a class="btnTW" href="#"><i class="fa-brands fa-2x fa-twitter iconos-footer"  alt="Icon TW"></i>  </a></li>
-                            <li><a class="btnFB" href="https://www.facebook.com/sapa.pabellon.7" target="_blank"> <i class="fa-brands fa-2x fa-facebook  iconos-footer"  alt="Icon FB"></i></a></li>
+                            <li><a  href="#"><i class="btnTW fa-brands fa-2x fa-twitter iconos-footer"  alt="Icon TW"></i>  </a></li>
+                            <li><a  href="https://www.facebook.com/sapa.pabellon.7" target="_blank"> <i class="btnFB fa-brands fa-2x fa-facebook  iconos-footer"  alt="Icon FB"></i></a></li>
                             <li><a href="https://www.instagram.com/sapapabellon/" target="_blank"> <i class="fa-brands fa-2x fa-instagram  iconos-footer" alt="Icon IG"></i></a></li>
                         </ul>
                     </div> 
-                               
-                                
-                               
-                        
+         
                 </div>
             </div>
         </footer>
