@@ -21,3 +21,13 @@ footer{
         margin: 0.5rem;
     }
 }
+$redes: ( /*Declaramos nuestro mapa*/
+        TW: #55acee,
+        FB:  #3a5795,
+); 
+@each $red, $color in $redes {
+    .btn--#{$red} {
+        color: $color;
+    }
+ }
+ 

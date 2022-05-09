@@ -3,8 +3,10 @@ $colorBlanco : white;
 
 @import '_header';
 @import '_disciplinas';
+@import '_contacto';
 @import '_home';
 @import '_footer';
+// @import '';
 
 *{
     font-size: 1.1rem;
@@ -13,4 +15,50 @@ $colorBlanco : white;
 body{
     width: 100%;
     height: auto;
+}
+@media (min-width: 300px) and (max-width:570px){
+    @mixin sizes($width) {
+        width: $width;
+     }
+    #imgLogoMobile{
+        @include sizes(70px);
+    }
+    footer {
+        #imagenFooter{
+            @include sizes(70px);
+        }
+    p{
+        font-size: 10px;
+    }
+    li {
+        margin-left: 1px;
+        i{
+            font-size: 1em;
+        }
+    }
+
+    }
+    .contenidoFooter{
+       
+        p{
+            font-size: 10px;
+        }
+        .navGeneral 
+        li {
+            margin-left: 1px;
+            i{
+                font-size: 1em;
+            }
+        }
+    }
+    .nav-disciplinas{
+        ul{
+            margin-top: 16px;
+        } 
+        li{
+            margin-top: 10px;
+        }
+    }
+     
+    
 }
