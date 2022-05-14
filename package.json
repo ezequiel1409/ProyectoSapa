@@ -21,8 +21,8 @@
     "url": "https://github.com/ezequiel1409/ProyectoSapa/issues"
   },
   "homepage": "https://github.com/ezequiel1409/ProyectoSapa#readme",
-  "dependencies": {
+  "devDependencies": {
     "node-sass": "^7.0.1",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.16"
   }
 }
