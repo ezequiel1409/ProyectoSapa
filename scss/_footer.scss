@@ -8,8 +8,6 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-content: center;
-    align-items: center;
 }
 .iconos-footer{
     color: $colorBlanco;
@@ -23,11 +21,9 @@ footer{
 }
 $redes: ( /*Declaramos nuestro mapa*/
         TW: #55acee,
-        FB:  #3a5795,
 ); 
 @each $red, $color in $redes {
-    .btn--#{$red} {
-        color: $color;
+    .btn#{$red} {
+        color: $color !important;
     }
  }
- 

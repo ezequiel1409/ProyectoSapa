@@ -31,17 +31,18 @@ header {
 
 .nav-disciplinas {
   background-color: #15157c; }
-
-.nav-disciplinas ul {
-  display: flex; }
-  .nav-disciplinas ul li {
+  .nav-disciplinas ul {
+    display: flex; }
+  .nav-disciplinas li {
     list-style-type: none;
     border-radius: 1rem;
     padding: 0.2rem;
     border: 1px solid white;
-    margin-left: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
     text-align: center; }
-  .nav-disciplinas ul a {
+  .nav-disciplinas a {
+    padding: 2rem;
     text-decoration: none;
     color: white; }
 
@@ -77,6 +78,23 @@ header {
     color: black; }
   .disciplina p {
     color: black; }
+
+.form {
+  display: inline;
+  margin: 1rem;
+  align-items: center; }
+
+.form-select, .form-control, input, select, textarea {
+  border-radius: 0.5rem !important;
+  padding: 0.5rem;
+  margin: 0.3rem;
+  border: 2px solid #000056 !important;
+  text-align: center; }
+
+.botonera button {
+  border-radius: 0.9rem;
+  padding: 1rem;
+  margin: 1rem; }
 
 .contentNoticia {
   justify-content: center;
@@ -155,9 +173,7 @@ footer {
 .contenidoFooter {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center; }
+  justify-content: space-around; }
 
 .iconos-footer {
   color: white; }
@@ -168,6 +184,9 @@ footer {
   .navGeneral li {
     margin: 0.5rem; }
 
+.btnTW {
+  color: #55acee !important; }
+
 * {
   font-size: 1.1rem;
   font-family: 'Roboto',  Verdana, sans-serif; }
@@ -175,3 +194,32 @@ footer {
 body {
   width: 100%;
   height: auto; }
+
+@media (min-width: 300px) and (max-width: 570px) {
+  #textDisciplinas {
+    font-size: 20px;
+    font-weight: bolder; }
+  #imgCarrusel {
+    height: 310px; }
+  #imgLogoMobile {
+    width: 70px; }
+  footer #imagenFooter {
+    width: 70px; }
+  footer p {
+    font-size: 10px; }
+  footer li {
+    margin-left: 1px; }
+    footer li i {
+      font-size: 1em; }
+  .contenidoFooter p {
+    font-size: 10px; }
+  .contenidoFooter .navGeneral
+li {
+    margin-left: 1px; }
+    .contenidoFooter .navGeneral
+li i {
+      font-size: 1em; }
+  .nav-disciplinas ul {
+    margin-top: 16px; }
+  .nav-disciplinas li {
+    margin-top: 10px; } }
