@@ -8,7 +8,7 @@
     <meta name="description" content="Pagina web para obtener mas información de las tablas, competiciones en la que compite la disciplina que consulta, colaborar con el club">
     <link rel="stylesheet" href="..\css\style.css">
     <title>Disciplinas</title>
-    <link rel="shorcut icon" href="imagen\logo.png">
+    <link rel="shorcut icon" href="../imagen/logo.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -17,45 +17,52 @@
 <body>
     <header>    
         <div class="row">
-            <div class="headerSup d-none d-sm-flex"> 
+            <div class="headerSup d-none d-lg-flex"> 
                 <ul class=" header-nav" id="navIzquierda">
-                    <li><a href="institucional.html">Institucional</a></li>
+                    <li>
+                        <a href="institucional.html">Institucional</a>
+                    </li>
                 </ul>
                 <div id="img-Logo-head">
                     <a href="../index.html" ><img src="../imagen/logo.png" alt="Logo Sapa"></a>
                 </div>
                 <ul class="header-nav" id="navDerecha" >
-                    <li> <a href="disciplinas.html">Disciplinas</a></li>
-                    <li><a href="galeria.html">Galería</a></li>
-                    <li> <a href="contacto.html">Contacto</a></li>
+                    <li> 
+                      <a href="disciplinas.html">Disciplinas</a>
+                    </li>
+                    <li>
+                        <a href="galeria.html">Galería</a>
+                    </li>
+                    <li>
+                       <a href="contacto.html">Contacto</a>
+                    </li>
                 </ul>
                 
             </div>
         </div>
-        
-        <nav class="navbar navbar-expand-lg navbar-light d-sm-none ">
-        <div class="container-fluid">
-            <a href="../index.html" class="text-center" ><img  id="imgLogoMobile" src="../imagen\logo.png" alt="Logo Sapa"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars text-white"></i>
-            </button>
-            <div class="collapse navbar-collapse text-center" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                <a class="nav-link" href="disciplinas.html">Disciplinas</a></li>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="galeria.html">Galería</a>
-                </li>
-                <li class="nav-item">
-                <li> <a class="nav-link" href="contacto.html">Contacto</a></li>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link " href="institucional.html" >Institucional</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light d-lg-none ">
+            <div class="container-fluid">
+                <a href="index.html" class="text-center" ><img  id="imgLogoMobile" src="../imagen/logo.png" alt="Logo Sapa"></a>
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="disciplinas.html">Disciplinas</a></li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galería</a>
+                        </li>
+                        <li> 
+                            <a class="nav-link" href="contacto.html">Contacto</a></li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="institucional.html" >Institucional</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
         </nav>
     </header>
         <main>
@@ -67,20 +74,21 @@
                             <h1 class="mb-3" id="textDisciplinas">Actualmente tenemos estas disciplinas</h1>
                         </div>
                         <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                                <a class="card cardDisciplina " href="#">
+                                <div class="card cardDisciplina " href="#">
                                         <img class="card-img-top imgCard" src="../imagen/imagenCarrusel.jpg" alt="Handball">
                                     <div class="lineaDisciplina"></div>
-                                    <div class="card-text mt-1" id="texto">
+                                    <div class="cardText " id="texto">
                                         <h2>Handball</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatibus, quisquam aliquid eius animi repellendus similique aliquam officia eum velit, ducimus, ullam optio eaque non perspiciatis necessitatibus corrupti consequatur beatae?</p>
-                                    </div>
-                                </a>
+                                        <h3>Todas las categorías en ambos sexos!</h3>
+                                        <p>¡Consultá por los horarios!, o comunicate al <a  href="tel:+1121758517">1121758517</a></p>
+                                    </div> 
+                                </div>
                         </div>
                         <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                                 <a class="card cardDisciplina " href="#">
                                         <img class="card-img-top imgCard"  src="../imagen/equipoFutbol.jpg" alt="Futbol">
                                     <div class="lineaDisciplina"></div>
-                                    <div class="card-text mt-1" id="texto">
+                                    <div class="cardText mt-1" id="texto">
                                         <h2>Fútbol</h2>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatibus, quisquam aliquid eius animi repellendus similique aliquam officia eum velit, ducimus, ullam optio eaque non perspiciatis necessitatibus corrupti consequatur beatae?</p>
                                     </div>
@@ -90,7 +98,7 @@
                                 <a class="card cardDisciplina" href="#">
                                         <img class="card-img-top imgCard"   src="../imagen/equipoBasquet.jpg" alt="Basquet">
                                     <div class="lineaDisciplina"></div>
-                                    <div class="card-text mt-1" id="texto">
+                                    <div class="cardText mt-1" id="texto">
                                         <h2>Básquet</h2>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatibus, quisquam aliquid eius animi repellendus similique aliquam officia eum velit, ducimus, ullam optio eaque non perspiciatis necessitatibus corrupti consequatur beatae?</p>
                                     </div>
@@ -100,7 +108,7 @@
                                 <a class="card cardDisciplina" href="#">
                                         <img class="card-img-top imgCard" src="../imagen/sapaRugby.jpg" alt="Rugby">
                                     <div class="lineaDisciplina"></div>
-                                    <div class="card-text mt-1" id="texto">
+                                    <div class="cardText mt-1" id="texto">
                                         <h2>Rugby</h2>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatibus, quisquam aliquid eius animi repellendus similique aliquam officia eum velit, ducimus, ullam optio eaque non perspiciatis necessitatibus corrupti consequatur beatae?</p>
                                     </div>
@@ -110,7 +118,7 @@
                                 <a class="card cardDisciplina" href="#">
                                         <img class="card-img-top imgCard"  src="../imagen/piletaNatacion.jpg" alt="Natacion">
                                     <div class="lineaDisciplina"></div>
-                                    <div class="card-text mt-1" id="texto">
+                                    <div class="cardText mt-1" id="texto">
                                         <h2>Natación</h2>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatibus, quisquam aliquid eius animi repellendus similique aliquam officia eum velit, ducimus, ullam optio eaque non perspiciatis necessitatibus corrupti consequatur beatae?</p>
                                     </div>
@@ -120,7 +128,7 @@
                                 <a class="card cardDisciplina" href="#">
                                         <img class="card-img-top imgCard"  src="../imagen/tenisSapa.jpg" alt="Atletismo">
                                     <div class="lineaDisciplina"></div>
-                                    <div class="card-text mt-1" id="texto">
+                                    <div class="cardText mt-1" id="texto">
                                         <h2>Tenis</h2>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatibus, quisquam aliquid eius animi repellendus similique aliquam officia eum velit, ducimus, ullam optio eaque non perspiciatis necessitatibus corrupti consequatur beatae?</p>
                                     </div>
@@ -130,7 +138,7 @@
                                 <a class="card cardDisciplina" href="#">
                                         <img class="card-img-top imgCard" src="../imagen/EquipoVoley.jpg" alt="Voley">
                                     <div class="lineaDisciplina"></div>
-                                    <div class="card-text mt-1" id="texto">
+                                    <div class="cardText mt-1" id="texto">
                                         <h2>Voley</h2>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatibus, quisquam aliquid eius animi repellendus similique aliquam officia eum velit, ducimus, ullam optio eaque non perspiciatis necessitatibus corrupti consequatur beatae?</p>
                                     </div>
@@ -140,7 +148,7 @@
                                 <a class="card cardDisciplina" href="#">
                                         <img class="card-img-top imgCard" src="../imagen/Gimnasio.jpg" alt="Gimnasio">
                                     <div class="lineaDisciplina"></div>
-                                    <div class="card-text mt-1" id="texto">
+                                    <div class="cardText mt-1" id="texto">
                                         <h2>Gimnasio</h2>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatibus, quisquam aliquid eius animi repellendus similique aliquam officia eum velit, ducimus, ullam optio eaque non perspiciatis necessitatibus corrupti consequatur beatae?</p>
                                     </div>

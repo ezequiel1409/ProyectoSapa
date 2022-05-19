@@ -19,7 +19,7 @@ footer{
         margin: 0.5rem;
     }
 }
-$redes: ( /*Declaramos nuestro mapa*/
+$redes: ( 
         TW: #55acee,
 ); 
 @each $red, $color in $redes {
