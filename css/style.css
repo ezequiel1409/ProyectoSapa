@@ -1,50 +1,45 @@
 header {
-  background-color: #000056; }
-
-.headerSup {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center; }
-
-.header-nav {
-  margin-left: 0px;
-  display: flex;
-  list-style-type: none; }
-  .header-nav li {
-    margin-left: 1.5rem; }
-  .header-nav a {
-    color: white;
-    text-decoration: none; }
-
-#img-Logo-head {
-  margin-left: 9rem; }
-
-.navbar-nav a {
-  color: white !important;
-  text-decoration: none !important; }
+  background-color: #000056;
+  width: auto; }
+  header .row {
+    --bs-gutter-x: 0 !important; }
+    header .row .headerSup {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+    header .row .header-nav {
+      margin-left: 0px;
+      display: flex;
+      list-style-type: none;
+      padding-right: 3rem;
+      padding-left: 3rem; }
+      header .row .header-nav li {
+        margin-left: 1.5rem; }
+      header .row .header-nav a {
+        color: white;
+        text-decoration: none; }
+    header .row #img-Logo-head {
+      margin-left: 9rem; }
+  header .navbar-nav li a {
+    color: white !important;
+    text-decoration: none !important; }
+  header #butonDisciplina {
+    margin-left: 0.7rem;
+    margin-bottom: 0.1rem;
+    margin-top: 0.1rem; }
+  header .navBotonSuperior {
+    margin-right: 0.7rem; }
 
 #filtrarPor {
   display: flex;
   flex-direction: column;
   align-items: flex-end; }
 
-.nav-disciplinas {
+.nuevaNav {
   background-color: #15157c; }
-  .nav-disciplinas ul {
-    display: flex; }
-  .nav-disciplinas li {
-    list-style-type: none;
-    border-radius: 1rem;
-    padding: 0.2rem;
-    border: 1px solid white;
-    margin-top: 1rem;
-    margin-left: 3rem;
-    text-align: center; }
-  .nav-disciplinas a {
-    padding: 2rem;
-    text-decoration: none;
-    color: white; }
+  .nuevaNav #navbarNav {
+    justify-content: center; }
 
 .cardDisciplina {
   padding: 1.2rem;
@@ -52,10 +47,17 @@ header {
   text-decoration: none !important;
   min-height: 60px;
   color: black;
-  margin-bottom: 1rem; }
+  margin-left: 0.7rem;
+  margin-bottom: 1rem;
+  height: 580px; }
+
+.cardText {
+  margin-top: 1rem; }
+  .cardText h2 {
+    text-align: center; }
 
 .imgCard {
-  height: 300px; }
+  height: 200px; }
 
 .lineaDisciplina {
   display: flex;
@@ -69,8 +71,7 @@ header {
     display: flex;
     flex-direction: column; }
   .disciplina a {
-    text-decoration: none;
-    height: 10rem; }
+    text-decoration: none; }
   .disciplina div img {
     text-align: center; }
   .disciplina h3 {
@@ -126,11 +127,8 @@ article {
   margin-bottom: 2rem;
   color: white;
   background: #0575E6;
-  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #021B79, #0575E6);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #021B79, #0575E6);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-radius: 1rem; }
   .noticia h5 {
     margin-bottom: 0%;
@@ -143,7 +141,6 @@ article {
 
 #parrafoBoton {
   background: #1e3c72;
-  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2a5298, #1e3c72);
@@ -189,37 +186,42 @@ footer {
 
 * {
   font-size: 1.1rem;
-  font-family: 'Roboto',  Verdana, sans-serif; }
+  font-family: 'Roboto',  Verdana, sans-serif;
+  --bs-gutter-x: 0 !important; }
 
 body {
   width: 100%;
   height: auto; }
 
-@media (min-width: 300px) and (max-width: 570px) {
+.disclaimer {
+  display: none; }
+
+@media (min-width: 300px) and (max-width: 400px) {
   #textDisciplinas {
     font-size: 20px;
     font-weight: bolder; }
   #imgCarrusel {
-    height: 310px; }
+    height: 220px; }
   #imgLogoMobile {
-    width: 70px; }
+    width: 60px;
+    margin-left: 0.8rem; }
   footer #imagenFooter {
-    width: 70px; }
+    width: 55px; }
   footer p {
+    margin-top: 20px;
     font-size: 10px; }
-  footer li {
-    margin-left: 1px; }
-    footer li i {
+  footer .navGeneral li {
+    margin: 0rem;
+    margin-top: 15px !important;
+    margin-left: 6px !important; }
+    footer .navGeneral li i {
       font-size: 1em; }
   .contenidoFooter p {
-    font-size: 10px; }
+    font-size: 0.4em; }
   .contenidoFooter .navGeneral
-li {
-    margin-left: 1px; }
-    .contenidoFooter .navGeneral
 li i {
-      font-size: 1em; }
+    font-size: 0.8em; }
   .nav-disciplinas ul {
     margin-top: 16px; }
-  .nav-disciplinas li {
-    margin-top: 10px; } }
+    .nav-disciplinas ul li {
+      margin-top: 10px; } }

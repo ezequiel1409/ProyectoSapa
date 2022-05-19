@@ -1,29 +1,52 @@
-header{
+header {
     background-color: $colorSapa;
-}
-.headerSup{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-} 
-.header-nav{
-    margin-left: 0px;
-    display: flex;
-    list-style-type: none;
+    width: auto;
+    .row {
+        --bs-gutter-x: 0 !important;
 
-    li{
-        margin-left: 1.5rem;
+        .headerSup {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .header-nav {
+            margin-left: 0px;
+            display: flex;
+            list-style-type: none;
+            padding-right: 3rem;
+            padding-left: 3rem;
+
+            li {
+                margin-left: 1.5rem;
+            }
+
+            a {
+                color: $colorBlanco;
+                text-decoration: none;
+            }
+        }
+
+        #img-Logo-head {
+            margin-left: 9rem;
+        }
+
     }
-    a{
-        color: $colorBlanco;
-        text-decoration: none;
+    .navbar-nav{
+        li{
+            a{
+                color: $colorBlanco  !important;
+                text-decoration: none !important;
+            }
+        }
+    } 
+    #butonDisciplina{
+        margin-left: 0.7rem;
+        margin-bottom: 0.1rem;
+        margin-top: 0.1rem;
     }
-}
-#img-Logo-head{
-    margin-left:9rem;
-}
-.navbar-nav a{
-    color: $colorBlanco !important;
-    text-decoration: none !important;
+    .navBotonSuperior{
+        margin-right: 0.7rem;;
+    }
 }
