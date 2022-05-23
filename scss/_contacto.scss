@@ -14,7 +14,14 @@
     
     button{
         border-radius: 0.9rem;
-        padding: 1rem;
+        // padding: 1rem;
         margin: 1rem;
+    }
+    #btnReset{
+        width: 70%;
+    }
+    #btnEnviar{
+        width:  60%;
+        height: 40px;
     }
 }
