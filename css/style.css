@@ -94,8 +94,14 @@ header {
 
 .botonera button {
   border-radius: 0.9rem;
-  padding: 1rem;
   margin: 1rem; }
+
+.botonera #btnReset {
+  width: 70%; }
+
+.botonera #btnEnviar {
+  width: 60%;
+  height: 40px; }
 
 .contentNoticia {
   justify-content: center;
@@ -200,8 +206,16 @@ body {
   #textDisciplinas {
     font-size: 20px;
     font-weight: bolder; }
+  .cardDisciplina {
+    margin-left: 0;
+    margin-bottom: 0.8rem; }
   #imgCarrusel {
     height: 220px; }
+  #btnReset {
+    width: 90% !important; }
+  #btnEnviar {
+    width: 60% !important;
+    height: 68px !important; }
   #imgLogoMobile {
     width: 60px;
     margin-left: 0.8rem; }
