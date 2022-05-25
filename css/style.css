@@ -80,6 +80,12 @@ header {
   .disciplina p {
     color: black; }
 
+.imgGaleria {
+  height: 500px;
+  border-radius: 8px !important; }
+  .imgGaleria img {
+    height: 305px; }
+
 .form {
   display: inline;
   margin: 1rem;
@@ -119,9 +125,6 @@ header {
   background-color: #000056;
   border-radius: 1rem !important;
   padding: 0.3rem; }
-
-article {
-  display: inline-block; }
 
 .noticia {
   display: flex;
@@ -189,6 +192,9 @@ footer {
 
 .btnTW {
   color: #55acee !important; }
+
+.footerGaleria {
+  margin-top: 1.85rem !important; }
 
 * {
   font-size: 1.1rem;

@@ -8,11 +8,6 @@
     background-color: rgb(21, 21, 124);
     #navbarNav {
         justify-content: center;
-        // a {
-        //     color: $colorBlanco;
-        //     padding-right: 1rem !important;
-        //     padding-left: 1rem !important;
-        // }
     }
 }
 
@@ -32,7 +27,6 @@
     h2{
         text-align: center;
     }
-   
 }
 
 .imgCard {
@@ -46,6 +40,7 @@
     margin-top: 15px;
 
 }
+
 
 .disciplina {
     text-decoration: none;
@@ -70,5 +65,12 @@
 
     p {
         color: black;
+    }
+}
+.imgGaleria{
+    height: 500px;  
+    border-radius: 8px !important;
+    img{
+        height:305px;
     }
 }
